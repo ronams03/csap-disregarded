@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#274e13" />
+  <title>CSAP-COC | City Scholars' Association in PHINMA Cagayan de Oro College</title>
+  <meta name="description" content="The City Scholars' Association in PHINMA Cagayan de Oro College (CSAP-COC) - To Serve and Guide the Oro Scholars in PHINMA COC. Est. 2019." />
+  <meta property="og:title" content="CSAP-COC | City Scholars' Association in PHINMA-COC" />
+  <meta property="og:description" content="To Serve and Guide the Oro Scholars in PHINMA COC." />
+  <meta property="og:image" content="assets/images/logo.png" />
+  <link rel="icon" href="assets/images/logo-128.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&amp;family=Noto+Sans+Batak&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="CSAP-COC home">
+        <img class="brand-logo" src="assets/images/logo-128.png" alt="CSAP-COC logo" width="36" height="36" />
+        <span class="brand-name" id="cmsBrand">CSAP-COC<small>PHINMA Cagayan de Oro College</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="siteNav"><span></span></button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul id="cmsNav">
+          <li><a href="#home" class="is-active">Home</a></li>
+          <li class="has-sub">
+            <a href="#about" aria-haspopup="true" aria-expanded="false">About</a>
+            <div class="nav-sub-panel">
+              <ul class="nav-sub">
+                <li><a href="#about"><span class="nav-sub-title">About Us</span></a></li>
+                <li><a href="#mission-vision"><span class="nav-sub-title">Mission &amp; Vision</span></a></li>
+                <li><a href="#lineage"><span class="nav-sub-title">Lineage of Leadership</span></a></li>
+                <li><a href="#history"><span class="nav-sub-title">Our History</span></a></li>
+                <li><a href="#officers"><span class="nav-sub-title">Officers</span></a></li>
+                <li><a href="#contact"><span class="nav-sub-title">Contact Us</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="has-sub">
+            <a href="#city-scholarship" aria-haspopup="true" aria-expanded="false">Scholarships</a>
+            <div class="nav-sub-panel">
+              <ul class="nav-sub">
+                <li><a href="#city-scholarship"><span class="nav-sub-title">City Scholarship</span></a></li>
+                <li><a href="#hk-scholarship"><span class="nav-sub-title">HK Scholarship</span></a></li>
+                <li><a href="#enrollment"><span class="nav-sub-title">Enrollment Process</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="has-sub">
+            <a href="#announcements" aria-haspopup="true" aria-expanded="false">Updates</a>
+            <div class="nav-sub-panel">
+              <ul class="nav-sub">
+                <li><a href="#announcements"><span class="nav-sub-title">Announcements</span></a></li>
+                <li><a href="#events"><span class="nav-sub-title">Events and Stories</span></a></li>
+                <li><a href="#calendar"><span class="nav-sub-title">Calendar</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a class="nav-cta" href="#enrollment">Enroll Now</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="progress" aria-hidden="true"><i id="scrollProgress"></i></div>
+    <!-- ===================== HEADER MARQUEE =====================
+         Announcement ticker. It scrolls automatically whenever something on
+         the public calendar lands on today's date (a holiday, a school event,
+         an activity or a deadline). Built and fed by assets/js/cms.js; it
+         stays empty and collapsed until there is something to say. -->
+    <div class="cal-marquee" id="calMarquee" aria-live="polite" hidden>
+      <span class="cal-marquee-tag" id="calMarqueeTag">Today</span>
+      <div class="cal-marquee-view"><div class="cal-marquee-track" id="calMarqueeTrack"></div></div>
+      <button type="button" class="cal-marquee-close" id="calMarqueeClose" aria-label="Dismiss">&times;</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" id="heroBg" aria-hidden="true">
+        <div class="hero-bg-slide is-active" style="background-image:url('assets/images/hero-1.jpg')"></div>
+        <div class="hero-bg-slide" style="background-image:url('assets/images/hero-2.jpg')"></div>
+        <div class="hero-bg-slide" style="background-image:url('assets/images/hero-3.jpg')"></div>
+      </div>
+      <div class="hero-veil" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-card reveal reveal-zoom" id="heroCard">
+          <div class="hero-card-grid">
+            <div class="hero-card-logo">
+              <img id="heroLogo" src="assets/images/logo-512.png" alt="CSAP-COC logo" width="512" height="512" loading="eager" />
+            </div>
+            <div class="hero-card-text">
+              <span class="hero-eyebrow" id="heroEyebrow">Welcome</span>
+              <h1 class="hero-title" id="heroTitle">WELCOME, ISDA!</h1>
+              <span class="hero-deco" aria-hidden="true"></span>
+              <p class="hero-tagline" id="heroTagline">&ldquo;To Serve and Guide the Oro Scholars in PHINMA COC.&rdquo;</p>
+              <p class="hero-meta" id="heroMeta">Est. 2019</p>
+              <div class="hero-actions">
+                <a class="btn btn-accent" id="heroBtn1" href="#city-scholarship">Learn More</a>
+                <a class="btn btn-outline" id="heroBtn2" href="#enrollment">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Invisible carousel anchor: keeps the hero slideshow's auto-advance alive (see main.js). -->
+      <div class="hero-controls" id="heroCarousel" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===================== HIGHLIGHT GALLERY ===================== -->
+    <section class="hero-gallery" aria-label="CSAP-COC highlights gallery">
+      <div class="container">
+        <div class="gallery-grid reveal" id="cmsGallery">
+          <button class="gallery-item" type="button" data-lightbox="0" aria-label="View CSAP-COC highlight 1 in full screen">
+            <img src="assets/images/hero-1.jpg" alt="CSAP-COC highlight 1" loading="lazy" />
+          </button>
+          <button class="gallery-item" type="button" data-lightbox="1" aria-label="View CSAP-COC highlight 2 in full screen">
+            <img src="assets/images/hero-2.jpg" alt="CSAP-COC highlight 2" loading="lazy" />
+          </button>
+          <button class="gallery-item" type="button" data-lightbox="2" aria-label="View CSAP-COC highlight 3 in full screen">
+            <img src="assets/images/hero-3.jpg" alt="CSAP-COC highlight 3" loading="lazy" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT US ===================== -->
+    <section class="section-banner" id="about">
+      <div class="container"><h2 id="cmsAboutBanner">About Us</h2><span class="deco"></span></div>
+    </section>
+    <section class="section">
+      <div class="container about-grid reveal">
+        <div>
+          <p class="lede" id="cmsAboutLede">The <strong>City Scholars' Association in PHINMA Cagayan de Oro College (CSAP)</strong> is a school-based organization that is responsible for overseeing scholars' welfare and development in PHINMA-COC.</p>
+          <p id="cmsAboutBody">With the tagline <em>&ldquo;To Serve and Guide the Oro Scholars in PHINMA-COC,&rdquo;</em> the organization aims to lead and equip the <strong>Iskolar Sa Dakbayan</strong> with the necessary skills and knowledge through engaging in different social initiatives that are anchored on four ladderized formations of the City Education Development Office &mdash; Leading the self; Leading Others; Leading the Community; and Leading the nation.</p>
+        </div>
+        <img id="cmsAboutImg" src="assets/images/about-us.jpg" alt="CSAP-COC organization" loading="lazy" />
+      </div>
+
+      <div class="container mt-4" id="mission-vision">
+        <div class="mv-grid reveal">
+          <article class="mv-card">
+            <img id="cmsMissionImg" src="assets/images/mission.jpg" alt="CSAP-COC mission" loading="lazy" />
+            <div class="mv-body">
+              <h3 id="cmsMissionTitle">Mission</h3>
+              <div id="cmsMissionBody">
+                <p>To strengthen the Scholar's participation in community development through a series of social action and formation activities and initiatives.</p>
+                <p class="mb-0">To uphold academic excellence and to create an inclusive environment for everyone.</p>
+              </div>
+            </div>
+          </article>
+          <article class="mv-card">
+            <img id="cmsVisionImg" src="assets/images/vision.jpg" alt="CSAP-COC vision" loading="lazy" />
+            <div class="mv-body">
+              <h3 id="cmsVisionTitle">Vision</h3>
+              <div id="cmsVisionBody">
+                <p>To become a school-based organization that enables every City Scholar to seize and appreciate open opportunities for individual betterment.</p>
+                <p class="mb-0">To fulfill this purpose, CSAP-COC endeavors to make a meaningful difference in the community through our succeeding programs.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="container mt-4" id="lineage">
+        <div class="lineage reveal">
+          <h3 id="cmsLeadersTitle">Our Lineage of Leadership</h3>
+          <ul class="lineage-list" id="cmsLeaders">
+            <li><span class="who">Mr. Liam Aiken R. Osorio <span class="muted">(Founder)</span></span><span class="when">2019&ndash;2020</span></li>
+            <li><span class="who">Ms. Mary Jane Lumain, LPT</span><span class="when">2020&ndash;2021</span></li>
+            <li><span class="who">Mr. Alawi Abdilla</span><span class="when">2021&ndash;2022</span></li>
+            <li><span class="who">Ms. Lovely Mae Cabodbod, LPT</span><span class="when">2022&ndash;2023</span></li>
+            <li><span class="who">Mr. Joel Lago</span><span class="when">2023&ndash;2024</span></li>
+            <li><span class="who">Mr. Michael John Llovia</span><span class="when">2025</span></li>
+            <li class="is-current"><span class="who">Ms. Mikyla Gwen Tabada <span class="muted">(Interim President)</span></span><span class="when">2026 &ndash; Present</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HISTORY (dark) ===================== -->
+    <section class="section history" id="history">
+      <div class="container reveal">
+        <h2 id="cmsHistoryTitle">The Legacy of CSAP-COC: Our History</h2>
+        <p class="subtitle" id="cmsHistorySub">Building a Foundation for City Scholars &mdash; Est. 2019</p>
+        <p id="cmsHistoryIntro">The story of the <strong>City Scholars Association in PHINMA COC (CSAP-COC)</strong> began with a mission to create a dedicated support system for the scholar community.</p>
+
+        <h4 id="cmsHistoryH1">2019: The Foundation</h4>
+        <p id="cmsHistoryH1Body">In 2019, <strong>Mr. Liam Aiken R. Osorio</strong> recognized the need for a unified voice and a structured organization to oversee the welfare of city scholars within PHINMA-Cagayan de Oro College. As the <strong>Founding President</strong>, he established the framework that continues to define our association today.</p>
+
+        <h4 id="cmsHistoryPurpose">Our Purpose from Day One</h4>
+        <p id="cmsHistoryPurposeBody">From its inception, CSAP-COC was built to be more than just a school-based organization. It was designed as a pillar of support, focusing on:</p>
+        <div class="pillars" id="cmsPillars">
+          <div class="pillar"><strong>Scholar Advocacy</strong>Ensuring the needs and voices of city scholars are heard.</div>
+          <div class="pillar"><strong>Holistic Development</strong>Creating opportunities for growth beyond the classroom.</div>
+          <div class="pillar"><strong>Community Welfare</strong>Building a &ldquo;home&rdquo; where every scholar feels valued and protected.</div>
+        </div>
+
+        <h4 id="cmsHistoryGrowth">A Growing Heritage</h4>
+        <p id="cmsHistoryGrowthBody">What started as a vision by Mr. Osorio has evolved into a vital part of the PHINMA-COC student experience. Since <strong>2019</strong>, we have remained committed to the development and success of every scholar who joins our family.</p>
+        <img class="history-banner" id="cmsHistoryBanner" src="assets/images/history-banner.png" alt="CSAP-COC history" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- ===================== OFFICERS =====================
+         Officers change every school year, so this section is filtered by
+         `school_year` (e.g. S.Y. 2025-2026). cms.js fills the dropdown below
+         from the database and defaults to the newest year. The static markup
+         underneath is the no-JS fallback (S.Y. 2025-2026). -->
+    <section class="section" id="officers">
+      <div class="container">
+        <h2 class="section-title center" id="cmsOfficersTitle">CSAP-COC Officers</h2>
+        <div class="officer-sy-row">
+          <label for="cmsOfficersYear">School Year</label>
+          <select id="cmsOfficersYear" aria-label="Select school year officers"></select>
+          <span class="officer-sy-note" id="cmsOfficersYearNote"></span>
+        </div>
+
+        <div class="officer-block reveal">
+          <h3>Executives</h3>
+          <div class="person-grid" id="cmsOfficersExec">
+            <div class="person"><span class="role">President</span><span class="name">Ms. Mikyla Gwen Tabada</span></div>
+            <div class="person"><span class="role">Vice President</span><span class="name">Ms. Jassell Ann Llesis</span></div>
+            <div class="person"><span class="role">General Secretary</span><span class="name">Mr. Johndel Tomada</span></div>
+            <div class="person"><span class="role">Associate Secretary</span><span class="name">Ms. Mary Antonette Limbaco</span></div>
+          </div>
+        </div>
+
+        <div class="officer-block reveal">
+          <h3>College Directors</h3>
+          <div class="person-grid" id="cmsOfficersDir">
+            <div class="person" data-dept="CMA"><span class="role">CMA Director</span><span class="name">Ms. Keara Zophiel Mulawan</span></div>
+            <div class="person" data-dept="COED"><span class="role">COED Director</span><span class="name">Ms. Mary Antonette Limbaco</span></div>
+            <div class="person" data-dept="SCCJ"><span class="role">SCCJ Director</span><span class="name">Ms. Carolyn L. Manaay</span></div>
+            <div class="person" data-dept="CAHS"><span class="role">CAHS Director</span><span class="name">Ms. Sittie Naawiah U. Angne</span></div>
+            <div class="person" data-dept="CITE"><span class="role">CITE Director</span><span class="name">Ms. KC Joy V. Asne</span></div>
+            <div class="person" data-dept="CEA"><span class="role">CEA Director</span><span class="name">Ms. Princess Gwyneth Candillada</span></div>
+          </div>
+        </div>
+
+        <div class="officer-block reveal">
+          <h3>Representatives</h3>
+          <div class="rep-grid" id="cmsReps">
+            <article class="rep-card" data-dept="CMA">
+              <header class="rep-head"><span class="rep-badge">CMA</span><h4>CMA Department</h4></header>
+              <div class="rep-list">
+                <div class="rep-row"><span class="rep-year">1st Year</span><span class="rep-names">Ms. Arem Jane Camino</span></div>
+                <div class="rep-row"><span class="rep-year">2nd Year</span><span class="rep-names">Ms. Jazmine Reen V. Catalonia &middot; Ms. Ellen Mae C. Dacillo</span></div>
+                <div class="rep-row"><span class="rep-year">3rd Year</span><span class="rep-names">Mr. Marc Tristan M. Justalero &middot; Ms. Patricia Ysabelle R. Arciaga</span></div>
+              </div>
+            </article>
+            <article class="rep-card" data-dept="COED">
+              <header class="rep-head"><span class="rep-badge">COED</span><h4>COED Department</h4></header>
+              <div class="rep-list">
+                <div class="rep-row"><span class="rep-year">1st Year</span><span class="rep-names">Ms. Cherejen D. Diva &middot; Ms. Erich G. Sinogaya</span></div>
+                <div class="rep-row"><span class="rep-year">2nd Year</span><span class="rep-names">Ms. Princess Shaina Tadeo &middot; Ms. Jessa Mae Pagaran</span></div>
+                <div class="rep-row"><span class="rep-year">3rd Year</span><span class="rep-names">Ms. Jenierose Paelmariano &middot; Ms. Charl Laine A. Roma</span></div>
+                <div class="rep-row"><span class="rep-year">4th Year</span><span class="rep-names">Mr. John Patrick Sagun</span></div>
+              </div>
+            </article>
+            <article class="rep-card" data-dept="SCCJ">
+              <header class="rep-head"><span class="rep-badge">SCCJ</span><h4>SCCJ Department</h4></header>
+              <div class="rep-list">
+                <div class="rep-row"><span class="rep-year">1st Year</span><span class="rep-names">Ms. Daisy Jean R. Clustre</span></div>
+                <div class="rep-row"><span class="rep-year">2nd Year</span><span class="rep-names">Ms. Francine Elise Cinco Bajao &middot; Mr. Rassmusen D. Lapode</span></div>
+                <div class="rep-row"><span class="rep-year">4th Year</span><span class="rep-names">Mr. Adrylle Kenzo E. Dumanon</span></div>
+              </div>
+            </article>
+            <article class="rep-card" data-dept="CAHS">
+              <header class="rep-head"><span class="rep-badge">CAHS</span><h4>CAHS Department</h4></header>
+              <div class="rep-list">
+                <div class="rep-row"><span class="rep-year">1st Year</span><span class="rep-names">Ms. Jasmine Jane G. Jabeniar</span></div>
+                <div class="rep-row"><span class="rep-year">2nd Year</span><span class="rep-names">Mr. Floydjamil Diongal &middot; Ms. Joanne Lourren O. A&ntilde;or</span></div>
+              </div>
+            </article>
+            <article class="rep-card" data-dept="CITE">
+              <header class="rep-head"><span class="rep-badge">CITE</span><h4>CITE Department</h4></header>
+              <div class="rep-list">
+                <div class="rep-row"><span class="rep-year">1st Year</span><span class="rep-names">Mr. Ferd Denver O. Dulanas &middot; Mr. Ken P. Torre</span></div>
+                <div class="rep-row"><span class="rep-year">2nd Year</span><span class="rep-names">Ms. Lian Suzaine Sultan</span></div>
+                <div class="rep-row"><span class="rep-year">3rd Year</span><span class="rep-names">Ms. Princess Janelle I. Badana</span></div>
+                <div class="rep-row"><span class="rep-year">4th Year</span><span class="rep-names">Ms. Jesse Ray Z. Morcillos</span></div>
+              </div>
+            </article>
+            <article class="rep-card" data-dept="CEA">
+              <header class="rep-head"><span class="rep-badge">CEA</span><h4>CEA Department</h4></header>
+              <div class="rep-list">
+                <div class="rep-row"><span class="rep-year">1st Year</span><span class="rep-names">Ms. Madhel T. Macayaon</span></div>
+                <div class="rep-row"><span class="rep-year">2nd Year</span><span class="rep-names">Ms. Asliah M. Macarambon &middot; Ms. Nicole Almoite</span></div>
+              </div>
+            </article>
+            <article class="rep-card" data-dept="Puerto">
+              <header class="rep-head"><span class="rep-badge">PRT</span><h4>Puerto</h4></header>
+              <div class="rep-list">
+                <div class="rep-row"><span class="rep-year">Representative</span><span class="rep-names">Ms. Anna Leah Zayas</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="officer-block reveal">
+          <h3>Volunteer Scholars Development Committee</h3>
+          <div id="cmsCommittee">
+          <div class="person-grid">
+            <div class="person"><span class="role">Committee Head</span><span class="name">Ms. Bai Shadjidah Kasim</span></div>
+          </div>
+          <div class="committee-grid mt-2">
+            <div class="dept" data-dept="Grievances">
+              <h4>Grievances Team</h4>
+              <p class="dept-names">Ms. Sohaila A. Alib &middot; Mr. Rodnealy B. Tadle &middot; Ms. Beverly Faith Abarquez</p>
+            </div>
+            <div class="dept" data-dept="Guidance">
+              <h4>Guidance Team</h4>
+              <p class="dept-names">Ms. Audrey M. Guzon &middot; Ms. Jazreel Claire Q. Regodon &middot; Ms. Althea Lucy Marie Relampagos</p>
+            </div>
+            <div class="dept" data-dept="Academic">
+              <h4>Academic Enhancement Team</h4>
+              <p class="dept-names">Ms. Chels Daiz Rebustes &middot; Mr. Christian Dave Albellar &middot; Ms. Uzzielyn B. Nermal</p>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="officer-block reveal">
+          <h3>Scholarship Coordinator</h3>
+          <div class="person-grid" id="cmsCoordinators">
+            <div class="person"><span class="role">School Coordinator</span><span class="name">Ms. April Rose V. Selim</span></div>
+            <div class="person"><span class="role">CEDO School-Based Coordinator</span><span class="name">Mr. Ian Xien Hinacay</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT US ===================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title center" id="cmsContactTitle">Contact Us</h2>
+        <div class="contact-grid mt-3 reveal" id="cmsContactCards">
+          <a class="contact-card" href="https://www.facebook.com/csapcoc" target="_blank" rel="noopener">
+            <img src="assets/images/contact-facebook.jpg" alt="Facebook page" loading="lazy" />
+            <span class="label">Facebook Page</span>
+            <span class="value">CSAP-COC</span>
+          </a>
+          <a class="contact-card" href="mailto:coccsap@gmail.com">
+            <img src="assets/images/contact-csap-email.png" alt="CSAP-COC email" loading="lazy" />
+            <span class="label">CSAP-COC Email</span>
+            <span class="value">coccsap@gmail.com</span>
+          </a>
+          <a class="contact-card" href="mailto:palayawcsapcoc@gmail.com">
+            <img src="assets/images/contact-palayaw-email.png" alt="Palayaw email" loading="lazy" />
+            <span class="label">Palayaw Email</span>
+            <span class="value">palayawcsapcoc@gmail.com</span>
+          </a>
+        </div>
+        <figure class="project-amigo reveal">
+          <img id="cmsProjectImg" src="assets/images/project-amigo.jpg" alt="CSAP-COC Project Amigo Culminating Activity, March 12, 2020" loading="lazy" />
+          <figcaption class="muted mt-1" id="cmsProjectCaption">CSAP-COC (Project Amigo Culminating Activity) &mdash; March 12, 2020</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== CITY SCHOLARSHIP ===================== -->
+    <section class="section-banner" id="city-scholarship">
+      <div class="container"><h2 id="cmsCityBanner">All About City Scholarship</h2><span class="deco"></span></div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <article class="article compact reveal">
+          <p class="lede" id="cmsCityLede">The <a href="https://www.facebook.com/CDOCityScholarshipsOffice/" target="_blank" rel="noopener"><strong>Cagayan de Oro City Scholarship Program</strong></a> is a government-funded initiative that provides comprehensive financial aid, including full tuition and monthly stipends, to eligible Kagay-anon students. Managed by the <strong>City Scholarships Office</strong>, it offers various tracks for <em>academic overachievers</em>, <em>low-income families</em>, and even students pursuing <em>law or medical degrees</em>.</p>
+
+          <h3 id="cmsSdpTitle">Scholar Development Program (SDP)</h3>
+          <p id="cmsSdpBody">The <strong>Scholar Development Program (SDP)</strong> consists of activities that City Scholars are required to complete <strong>every semester</strong>. These activities may be conducted <strong>within the school</strong> or <strong>in the community/barangay</strong>, and are designed to promote leadership, service, and personal development among scholars.</p>
+
+          <h3 id="cmsSdpTypesTitle">Types of Scholar Development Program (SDP)</h3>
+          <div class="sdp-grid" id="cmsSdp">
+            <div class="sdp-card">
+              <h4>1. Community Volunteerism</h4>
+              <p><strong>Week-long or month-long activities</strong> usually implemented by community-based organizations that address community needs and promote civic engagement.</p>
+            </div>
+            <div class="sdp-card">
+              <h4>2. Ladderized Activities</h4>
+              <p>Implemented by the <strong>City Education Office (CEDO)</strong> to develop scholars&rsquo; leadership and character formation. Examples:</p>
+              <ul class="arrow-list"><li>KATIG</li><li>ISLA Modules</li><li>School-based &amp; Community-based General Assembly</li><li>FIOGET</li></ul>
+            </div>
+            <div class="sdp-card">
+              <h4>3. Institutionalized Volunteerism</h4>
+              <p><strong>One-shot or short-term volunteer activities</strong> within the school, community, or through CEDO. Examples:</p>
+              <ul class="arrow-list"><li>Klarex na Kalimpyo</li><li>CEDO Calls for Volunteers</li><li>School-based &amp; Community-based initiated activities</li></ul>
+            </div>
+          </div>
+
+          <h3 id="cmsFaqTitle">Frequently Asked Questions</h3>
+          <div class="faq" id="cmsFaq">
+            <details class="faq-item" open><summary>SDP &mdash; How many SDPs are we going to render per semester?</summary><div class="faq-body">7 SDP per semester.</div></details>
+            <details class="faq-item"><summary>GC &mdash; How to join my College Group chat?</summary><div class="faq-body">Message the college director and representative from your respective department and send them your CSR as proof that you are a city scholar grantee.</div></details>
+            <details class="faq-item"><summary>Scholarship &mdash; Why are we a City Scholar and HK Scholar at the same time?</summary><div class="faq-body">There is an agreement between the CEDO and PHINMA COC that once you are a city scholar and you enroll at COC, you will automatically have two (2) scholarships: the Internal Scholarship (HK 50%) and the External Scholarship (City Scholar 50%).</div></details>
+            <details class="faq-item"><summary>Scholarship &mdash; Do we have to render both City Scholar and HK Scholar duties?</summary><div class="faq-body">Yes, we have to render both City Scholar and HK duties. Failure to do so will result in the untagging of the scholarship.</div></details>
+            <details class="faq-item"><summary>Scholarship &mdash; When do we renew our scholarship?</summary><div class="faq-body">Both HK and City scholarships should be renewed every after the semester.</div></details>
+            <details class="faq-item"><summary>Scholarship &mdash; I haven&rsquo;t met the required GWA, does that mean I am no longer a city scholar?</summary><div class="faq-body">You will be called by the CEDO and will be marked as on-probation. If your grades don&rsquo;t improve and still don&rsquo;t meet the required GWA, that is the time you will be removed as a city scholar.</div></details>
+            <details class="faq-item"><summary>Scholarship &mdash; If I lose my City Scholarship, will my HK Scholarship still remain?</summary><div class="faq-body">Yes. You still have your HK Scholarship, since it doesn&rsquo;t have a grade requirement.</div></details>
+            <details class="faq-item"><summary>Scholarship &mdash; If I haven&rsquo;t renewed my City Scholarship from the CEDO, will my scholarship be removed?</summary><div class="faq-body">Yes, because it is stated in the contract that we are required to renew our scholarship and render our SDP every semester.</div></details>
+          </div>
+
+          <h4 class="mt-3" id="cmsGuideTitle">SDP Guide</h4>
+          <img id="cmsGuideImg" src="assets/images/faq-sdp-guide.png" alt="SDP guide" loading="lazy" />
+
+          <div class="inquiry">
+            <p>For inquiries on our forms and other requirements, please send us a message on Facebook:</p>
+            <a class="btn btn-outline btn-sm" href="https://www.facebook.com/csapcoc" target="_blank" rel="noopener">CSAP-COC</a>
+            <span class="sep">|</span>
+            <a class="btn btn-outline btn-sm" href="https://www.facebook.com/phinmacoc" target="_blank" rel="noopener">PHINMA-COC</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== HK SCHOLARSHIP ===================== -->
+    <section class="section-banner" id="hk-scholarship">
+      <div class="container"><h2 id="cmsHkBanner">All About Hawak-Kamay Scholarship</h2><span class="deco"></span></div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <article class="article compact reveal">
+          <p class="lede" id="cmsHkLede">The <strong>Hawak Kamay (HK) Scholarship</strong> is a financial aid program offered by <strong>PHINMA Education</strong> in the Philippines. It is designed to make college affordable for students from low-income families.</p>
+
+          <div class="feature-grid" id="cmsHkFeatures">
+            <div class="feature"><strong>Fixed Low Tuition</strong><span>A consistent, discounted rate of <strong>&#8369;5,500 to &#8369;12,500</strong> per semester (rates vary by school/program).</span></div>
+            <div class="feature"><strong>No Entrance Exams</strong><span>Admission is based on your determination to learn, not a high-pressure test.</span></div>
+            <div class="feature"><strong>No Maintaining Grade</strong><span>As long as you pass your subjects, you keep your scholarship.</span></div>
+            <div class="feature"><strong>Guaranteed Coverage</strong><span>The discount applies from your first year until you graduate.</span></div>
+          </div>
+
+          <h3 id="cmsHkWhoTitle">Who Can Apply?</h3>
+          <ul class="arrow-list list-cols" id="cmsHkWho">
+            <li>Incoming First-Year College Students.</li>
+            <li>Transferees (depending on the specific PHINMA campus policy).</li>
+            <li>Students with a strong desire to finish their degree despite financial challenges.</li>
+          </ul>
+
+          <h3 id="cmsHkBenefitsTitle">Benefits of HK Scholarship</h3>
+          <div class="price-grid" id="cmsHkPrices">
+            <div class="price"><strong>HK5.5</strong><span>&#8369;5,500 per semester</span></div>
+            <div class="price"><strong>HK7.5</strong><span>as low as &#8369;7,500 per semester</span></div>
+            <div class="price"><strong>HK10</strong><span>as low as &#8369;10,000 per semester</span></div>
+            <div class="price"><strong>HK12.5</strong><span>as low as &#8369;12,000 per semester</span></div>
+          </div>
+          <div class="highlight" id="cmsHkPriceNote"><strong>Note:</strong> Books and uniforms are not included.</div>
+
+          <h3 id="cmsHkEligTitle">Eligibility &amp; Requirements</h3>
+          <div class="info-grid">
+            <div class="info-card">
+              <h4 id="cmsHkEligSub">Eligibility</h4>
+              <ul class="check-list" id="cmsHkElig">
+                <li>The student must be an incoming freshman.</li>
+                <li>The student must belong to a low-income family.</li>
+                <li>The student must pass the scholarship exam.</li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h4 id="cmsHkReqSub">Requirements</h4>
+              <p id="cmsHkReqBody">Submit the following documents at the <strong>Marketing Department</strong>, on or before the set deadline:</p>
+              <ul class="arrow-list" id="cmsHkReq"><li>Form 137</li><li>Certificate of Good Moral Character</li><li>NSO Birth Certificate</li></ul>
+            </div>
+          </div>
+          <div class="highlight" id="cmsHkMaintenance"><strong>Maintenance:</strong> The scholarship extends for the normal life of the chosen program upon enrollment in first year. Must be able to render <strong>80 hours/semester</strong>.</div>
+
+          <h3 id="cmsHkExamTitle">Exam Permit and Guidelines</h3>
+          <ul class="arrow-list list-cols" id="cmsHkExam">
+            <li>Log in to your SIS account and download your exam permits.</li>
+            <li>If you weren&rsquo;t able to download your permit, you need to pay first your balance and go to assessment for approval.</li>
+            <li>If you don&rsquo;t have any balance, just go directly to the assessment for approval &mdash; just state that you are a city scholar.</li>
+          </ul>
+
+          <h3 id="cmsHkDutyTitle">HK Scholarship Duty</h3>
+          <ul class="arrow-list list-cols" id="cmsHkDuty">
+            <li>After enrollment, the CSDL Office will email you regarding your duty assignment and its schedule.</li>
+            <li>If you weren&rsquo;t able to accomplish your duty within the assigned schedule, you can directly go to the CSDL Office and look for Ma&rsquo;am April Rose V. Selim so she can give you another duty assignment.</li>
+            <li>City Scholars are required to render <strong>25 hours of duty</strong> to the department/office assigned to you.</li>
+          </ul>
+
+          <h3 id="cmsHkRenewTitle">HK Scholarship Renewal</h3>
+          <p id="cmsHkRenewBody">The renewal form and steps will be posted through <a href="https://www.facebook.com/groups/phinmacoccityscholars" target="_blank" rel="noopener">PHINMA COC City Scholar</a> and <a href="https://www.facebook.com/phinmacoccsdl" target="_blank" rel="noopener">PHINMA COC Center for Student Development and Leadership</a>.</p>
+          <h4 id="cmsHkRenewSub">Requirements needed for renewal</h4>
+          <ul class="arrow-list list-cols" id="cmsHkRenew">
+            <li><strong>Freshmen</strong> &mdash; School ID, HK Orientation, and HK LEADS.</li>
+            <li><strong>Upperclassmen</strong> &mdash; DTR signed by the department/office assigned to you.</li>
+            <li><strong>Fourth Year</strong> &mdash; School ID only.</li>
+            <li><strong>Working Student</strong> &mdash; Submit Certificate of Employment (COE).</li>
+          </ul>
+          <div class="highlight" id="cmsHkRenewNote"><strong>NOTE:</strong> Failure to renew the HK Scholarship means the scholarship will be untagged, and you will have to pay the remaining 50% of your tuition.</div>
+
+          <div class="inquiry">
+            <p>For inquiries on our forms and other requirements, please send us a message on Facebook:</p>
+            <a class="btn btn-outline btn-sm" href="https://www.facebook.com/csapcoc" target="_blank" rel="noopener">CSAP-COC</a>
+            <span class="sep">|</span>
+            <a class="btn btn-outline btn-sm" href="https://www.facebook.com/phinmacoc" target="_blank" rel="noopener">PHINMA-COC</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== ENROLLMENT PROCESS ===================== -->
+    <section class="section-banner" id="enrollment">
+      <div class="container"><h2 id="cmsEnrollBanner">All About Enrollment Process</h2><span class="deco"></span></div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <article class="article compact reveal">
+          <h3 id="cmsEnrollTitle">Admission for Incoming Freshman</h3>
+          <h4 id="cmsEnrollReqHeading">Requirements</h4>
+          <ul class="check-list" id="cmsEnrollReq"><li>PSA Birth Certificate</li><li>Form 138 (Report Card)</li></ul>
+
+          <div class="info-grid">
+            <div class="info-card">
+              <h4 id="cmsWalkinTitle">Walk-in Enrollment</h4>
+              <div class="steps" id="cmsWalkin">
+                <div class="step"><div><h4>Fill out your enrollment form</h4><p>at the Marketing Office.</p></div></div>
+                <div class="step"><div><h4>Pay the enrollment fee</h4><p>&#8369;750 (HK Grantee) &middot; &#8369;1,000 (Regular student)</p></div></div>
+                <div class="step"><div><h4>Get your ORF or Class schedule</h4><p>at the assessment area.</p></div></div>
+                <div class="step"><div><h4>Go back to the Marketing Office</h4><p>for orientation and get your welcome kit.</p></div></div>
+              </div>
+            </div>
+            <div class="info-card">
+              <h4 id="cmsOnlineTitle">Online Enrollment</h4>
+              <div class="steps" id="cmsOnline">
+                <div class="step"><div><h4>Fill out the online enrollment form</h4><p><a href="https://linktr.ee/phinmacoc" target="_blank" rel="noopener">&raquo; Register Here &laquo;</a></p></div></div>
+                <div class="step"><div><h4>Check your email</h4><p>If you received a notification of your successful registration receipt.</p></div></div>
+                <div class="step"><div><h4>Wait for our team to call you</h4><p>and guide you on to the next process. Check your email for your class schedule or ORF.</p></div></div>
+              </div>
+              <div class="highlight" id="cmsOnlineNote"><strong>Note:</strong> Please only select <strong>Online Payment</strong> as your mode of payment.</div>
+            </div>
+          </div>
+
+          <div class="inquiry">
+            <p>For inquiries on our forms and other requirements, please send us a message on Facebook:</p>
+            <a class="btn btn-outline btn-sm" href="https://www.facebook.com/csapcoc" target="_blank" rel="noopener">CSAP-COC</a>
+            <span class="sep">|</span>
+            <a class="btn btn-outline btn-sm" href="https://www.facebook.com/phinmacoc" target="_blank" rel="noopener">PHINMA-COC</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== ANNOUNCEMENTS ===================== -->
+    <section class="section-banner" id="announcements">
+      <div class="container"><h2 id="cmsAnnBanner">Announcements</h2><span class="deco"></span></div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h3 class="section-title center" id="cmsAnnTitle">Organizational Memorandums</h3>
+        <div class="card-grid mt-3 reveal" id="cmsDocs">
+          <article class="doc-card">
+            <img src="assets/images/memorandum-001.jpg" alt="Memorandum 001, s. 2526" loading="lazy" />
+            <div class="doc-body"><strong>Memorandum 001, s. 2526</strong><a class="btn btn-primary btn-sm" href="https://tinyurl.com/bdc3z3m3" target="_blank" rel="noopener">View document</a></div>
+          </article>
+          <article class="doc-card">
+            <img src="assets/images/memorandum-002.jpg" alt="Memorandum 002, s. 2526" loading="lazy" />
+            <div class="doc-body"><strong>Memorandum 002, s. 2526</strong><a class="btn btn-primary btn-sm" href="https://tinyurl.com/CSAP-COC-MM02" target="_blank" rel="noopener">View document</a></div>
+          </article>
+          <article class="doc-card">
+            <img src="assets/images/memorandum-003.jpg" alt="Memorandum 003, s. 2526" loading="lazy" />
+            <div class="doc-body"><strong>Memorandum 003, s. 2526</strong><a class="btn btn-primary btn-sm" href="http://bit.ly/4pDu7fu" target="_blank" rel="noopener">View document</a></div>
+          </article>
+          <article class="doc-card">
+            <img src="assets/images/executive-order-001.jpg" alt="Executive Order 001, s. 2526" loading="lazy" />
+            <div class="doc-body"><strong>Executive Order 001, s. 2526</strong><a class="btn btn-primary btn-sm" href="https://tinyurl.com/y9kf3fu6" target="_blank" rel="noopener">View document</a></div>
+          </article>
+        </div>
+        <div class="inquiry">
+          <p>For inquiries on our forms and other requirements, please send us a message on Facebook:</p>
+          <a class="btn btn-outline btn-sm" href="https://www.facebook.com/csapcoc" target="_blank" rel="noopener">CSAP-COC</a>
+          <span class="sep">|</span>
+          <a class="btn btn-outline btn-sm" href="https://www.facebook.com/phinmacoc" target="_blank" rel="noopener">PHINMA-COC</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EVENTS AND STORIES ===================== -->
+    <section class="section-banner" id="events">
+      <div class="container"><h2 id="cmsEventsBanner">Events and Stories</h2><span class="deco"></span></div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2 reveal" id="cmsEvents">
+          <article class="event-card">
+            <img src="assets/images/event-csap.jpg" alt="CSAP-COC event" loading="lazy" />
+            <div class="event-body">
+              <h3>City Scholar Association in PHINMA-COC (CSAP-COC)</h3>
+              <a class="btn btn-accent btn-sm" href="https://www.facebook.com/csapcoc" target="_blank" rel="noopener">Check it out!</a>
+            </div>
+          </article>
+          <article class="event-card">
+            <img src="assets/images/event-cedo.jpg" alt="CEDO event" loading="lazy" />
+            <div class="event-body">
+              <h3>City Educational and Development Office (CEDO)</h3>
+              <a class="btn btn-accent btn-sm" href="https://www.facebook.com/CDOCityScholarshipsOffice" target="_blank" rel="noopener">Check it out!</a>
+            </div>
+          </article>
+        </div>
+        <div class="grid mt-3 reveal" id="cmsStories">
+          <div class="story">
+            <h3>Notice of Resignation</h3>
+            <a class="btn btn-outline btn-sm" href="https://www.facebook.com/share/p/18xz141uEk/" target="_blank" rel="noopener">Read more...</a>
+          </div>
+          <div class="story">
+            <h3>7th PHINMA Student Leaders&rsquo; Summit in Manila.</h3>
+            <a class="btn btn-outline btn-sm" href="https://www.facebook.com/share/p/14YoSpPkSnY/" target="_blank" rel="noopener">Read more...</a>
+          </div>
+        </div>
+        <div class="inquiry">
+          <p>For inquiries on our forms and other requirements, please send us a message on Facebook:</p>
+          <a class="btn btn-outline btn-sm" href="https://www.facebook.com/csapcoc" target="_blank" rel="noopener">CSAP-COC</a>
+          <span class="sep">|</span>
+          <a class="btn btn-outline btn-sm" href="https://www.facebook.com/phinmacoc" target="_blank" rel="noopener">PHINMA-COC</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CALENDAR ===================== -->
+    <section class="section-banner" id="calendar">
+      <div class="container"><h2 id="cmsCalendarBanner">Calendar</h2><span class="deco"></span></div>
+    </section>
+    <section class="section">
+      <div class="container reveal">
+        <!-- Real month grid: built by assets/js/cms.js from the published calendar
+             entries. The Google embed below stays as the no-JS fallback and is
+             removed from view as soon as the grid renders. -->
+        <div class="cal-app" id="cmsCalendarApp" hidden>
+          <div class="cal-toolbar">
+            <button type="button" class="cal-nav" data-cal-prev aria-label="Previous month">&lsaquo;</button>
+            <div class="cal-month"><strong id="cmsCalMonth">&nbsp;</strong><span id="cmsCalYear"></span></div>
+            <button type="button" class="cal-nav" data-cal-next aria-label="Next month">&rsaquo;</button>
+            <span class="spacer"></span>
+            <button type="button" class="cal-today" data-cal-today>Today</button>
+          </div>
+          <div class="cal-legend" id="cmsCalLegend"></div>
+          <div class="cal-grid" id="cmsCalGrid" role="grid" aria-label="Calendar month grid"></div>
+          <p class="cal-hint">Tap any day to see what&rsquo;s happening &mdash; holidays, school events, CSAP activities and deadlines.</p>
+          <p class="cal-empty" id="cmsCalEmpty" hidden>No entries for this month yet.</p>
+        </div>
+        <div class="calendar-frame" id="cmsCalendarFrame" data-cal-fallback>
+          <iframe id="cmsCalendar" title="CSAP-COC Calendar" src="https://www.google.com/calendar/embed?color=%239fe1e7&amp;mode=MONTH&amp;showCalendars=1&amp;showPrint=0&amp;showTz=0&amp;src=coccsap@gmail.com" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating day-detail popup for the public calendar (see assets/js/cms.js) -->
+    <div class="cal-pop" id="calPopup" aria-hidden="true">
+      <div class="cal-pop-back" data-cal-pop-close></div>
+      <div class="cal-pop-card" role="dialog" aria-modal="true" aria-labelledby="calPopTitle">
+        <button type="button" class="cal-pop-close" data-cal-pop-close aria-label="Close">&times;</button>
+        <h3 id="calPopTitle" class="cal-pop-title">Details</h3>
+        <p class="cal-pop-date" id="calPopDate"></p>
+        <div class="cal-pop-list" id="calPopList"></div>
+      </div>
+    </div>
+
+    <!-- ===================== AWARDS AND RECOGNITION ===================== -->
+    <section class="section-banner" id="awards">
+      <div class="container"><h2 id="cmsAwardsBanner">Awards and Recognition</h2><span class="deco"></span></div>
+    </section>
+    <section class="section awards">
+      <div class="container reveal">
+        <h2 class="text-center" id="cmsAwardsTitle">Kinanao Awardee Through the Years</h2>
+        <p id="cmsAwardsP1">The <strong>Kinanao Awards</strong> is an annual recognition program in Cagayan de Oro City dedicated to honoring the exceptional achievements of city scholars and their organizations. Organized by the <strong>City Scholarships Office (CSO)</strong>, the name is derived from the Higaonon term <em>kinanao</em>, meaning &ldquo;learner.&rdquo;</p>
+        <p id="cmsAwardsP2">Rather than focusing solely on grades, the awards celebrate scholars who demonstrate a holistic commitment to <strong>leadership, community service, and volunteerism</strong>. It serves as a prestigious platform to spotlight individuals and groups who embody the spirit of being &ldquo;scholars for the people,&rdquo; encouraging the city&rsquo;s youth to balance academic excellence with active civic engagement for the development of Northern Mindanao.</p>
+
+        <div class="award-grid" id="cmsAwards">
+          <article class="award">
+            <img src="assets/images/awardee-cabodbod.jpg" alt="Lovely Mae Cabodbod, LPT" loading="lazy" />
+            <div class="award-body"><p class="award-name">Lovely Mae Cabodbod, LPT</p><p class="award-title">Kinanao Awards 2025 &mdash; Pablo Magtajas Leadership Awardee</p></div>
+          </article>
+          <article class="award">
+            <img src="assets/images/awardee-osorio.jpg" alt="Liam Aiken R. Osorio" loading="lazy" />
+            <div class="award-body"><p class="award-name">Liam Aiken R. Osorio</p><p class="award-title">Kinanao Awards 2018 &mdash; Pablo Magtajas Leadership Awardee</p></div>
+          </article>
+          <article class="award">
+            <img src="assets/images/awardee-csap-org.jpg" alt="City Scholars Association in PHINMA COC" loading="lazy" />
+            <div class="award-body"><p class="award-name">City Scholars Association in PHINMA COC</p><p class="award-title">Outstanding Organization Awards: School-Based</p></div>
+          </article>
+          <article class="award">
+            <img src="assets/images/awardee-llovia.jpg" alt="Michael John Llovia" loading="lazy" />
+            <div class="award-body"><p class="award-name">Michael John Llovia</p><p class="award-title">Kinanao Awards 2025 &mdash; Outstanding Volunteer of the Year Awardee</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>CSAP-COC</h4>
+        <p class="mb-0" id="cmsFooterAbout">City Scholars' Association in PHINMA Cagayan de Oro College.<br /><em>&ldquo;To Serve and Guide the Oro Scholars in PHINMA COC.&rdquo;</em></p>
+        <p class="mt-2" id="cmsFooterEst">Est. 2019</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="#about">About Us</a>
+          <a href="#city-scholarship">City Scholarship</a>
+          <a href="#hk-scholarship">HK Scholarship</a>
+          <a href="#enrollment">Enrollment Process</a>
+          <a href="#announcements">Announcements</a>
+          <a href="#events">Events and Stories</a>
+          <a href="#calendar">Calendar</a>
+          <a href="#awards">Awards and Recognition</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <div class="footer-links">
+          <a href="https://www.facebook.com/csapcoc" target="_blank" rel="noopener">Facebook &mdash; CSAP-COC</a>
+          <a href="https://www.facebook.com/phinmacoc" target="_blank" rel="noopener">Facebook &mdash; PHINMA-COC</a>
+          <a href="https://www.facebook.com/CDOCityScholarshipsOffice/" target="_blank" rel="noopener">City Scholarships Office</a>
+          <a href="mailto:coccsap@gmail.com">coccsap@gmail.com</a>
+          <a href="mailto:palayawcsapcoc@gmail.com">palayawcsapcoc@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="mb-0" id="cmsFooterCopy">&copy; 2026 CSAP-COC. All Rights Reserved. &middot; Designed and Developed by <span class="devs">ISDA DEVS of PHINMA-COC</span></p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/cms.js" defer></script>
+  <script>
+    /* Last-resort safety net. cms.js calls window.CSAP.refresh() once it has
+       rendered the content and main.js re-binds itself, so by now the UI layer
+       should be fully initialised. If it somehow is not (scripts blocked or
+       failed), un-hide everything so the page can never look empty. */
+    window.setTimeout(function () {
+      if (window.CSAP && typeof window.CSAP.refresh === 'function') { window.CSAP.refresh(); return; }
+      var s = document.createElement('script');
+      s.src = 'assets/js/main.js';
+      document.body.appendChild(s);
+    }, 6000);
+    window.setTimeout(function () {
+      if (!window.CSAP) document.documentElement.classList.remove('js');
+    }, 9000);
+  </script>
+  <!-- ===================== IMAGE LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">×</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Next image">›</button>
+    <div class="lightbox-stage">
+      <img src="" alt="Full view" id="lightboxImg" />
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+</body>
+</html>
